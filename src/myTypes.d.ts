@@ -17,9 +17,7 @@ export interface ColleagueHistory {
   current: Colleague[];
   former: Colleague[];
 }
-export const friends: Friend[] = [friend1, friend2];
-
-export const colleagues: ColleagueHistory = {
-  current: [colleague1, colleague2, colleague3],
-  former: [],
-};
+export interface EmailContact {
+    name: string;
+    email: string;
+}
