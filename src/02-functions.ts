@@ -14,7 +14,7 @@ function allOlder(friends: Friend[]): string[] {
 }
 
 console.log(allOlder(friends));
-function highestExtension(cs: Colleague[]): Colleague {
+function highestExtension(cs: Colleague[]) {
     const result = cs.sort((c1, c2) => c1.contact.extension - c2.contact.extension);
     return result[cs.length - 1];
   }
