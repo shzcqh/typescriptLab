@@ -49,4 +49,10 @@ function highestExtension(cs: Colleague[]) {
   
   console.log(sortColleagues(colleagues.current, (a, b) => a.contact.extension - b.contact.extension));
   console.log(sortColleagues(colleagues.current, (a, b) => a.name.length - b.name.length));
-  
+  function findFriends(friends: Friend[], criterion: (friend: Friend) => boolean): string[] {
+    return friends.filter(criterion).map(f => f.name);
+}
+
+console.log(findFriends(friends, (friend) => friend.name.startsWith('Pa')));
+console.log(findFriends(friends, (friend) => friend.age < 35));
+
